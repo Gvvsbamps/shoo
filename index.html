@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice</title>
+    <script>
+      var t = 0;
+      function hojil() {
+        var btn_dis = (document.getElementId("btn").disabled = true);
+        var win = (document.getElementById("box").innerHTML = "Та хожлоо");
+        var t = (document.getElementById("total").innerHTML = t += n);
+        return btn_dis, win;
+      }
+      function dice() {
+        var n;
+        n = Math.ceil(Math.random() * 6);
+        n = parseInt(n);
+        t >= 20 ? hojil() : null;
+        return (
+          (document.getElementById("shoo").src = "/" + n + ".JPG"),
+          (document.getElementById("total").innerHTML = t += n),
+          (document.getElementById("shoo1").innerHTML = n)
+        );
+      }
+    </script>
+    <style>
+      body {
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn" onclick="dice()">Шоог шид</button>
+    <br />
+    <img src="" id="shoo" alt="" />
+    <h2 id="shoo1"></h2>
+    <h1 id="box">Цуглуулсан оноо</h1>
+    <h2 id="total"></h2>
+    <h1></h1>
+  </body>
+</html>
